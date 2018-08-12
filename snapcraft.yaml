@@ -1,8 +1,8 @@
-name: pi3
+name: strato-pi3
 version: 16.04-0.6
-summary: Raspberry Pi 3 support package
+summary: Raspberry Pi 3 support package for StratoPi
 description: |
- Support files for booting Raspberry Pi
+ Support files for booting Raspberry Pi with StratoPi
 type: gadget
 architectures:
   - armhf
@@ -10,9 +10,9 @@ confinement: strict
 grade: stable
 parts:
   uboot:
-    plugin: nil
+    plugin: make
     source: git://git.denx.de/u-boot.git
-    source-branch: v2017.05
+    source-tag: v2017.05
     prepare: |
       git apply ../../../uboot.patch
       make rpi_3_32b_defconfig
@@ -179,3 +179,7 @@ slots:
   spidev0.1:
      interface: spi
      path: /dev/spidev0.1
+  serial:
+     interface: serial-port
+     path: /dev/ttyS0
+
