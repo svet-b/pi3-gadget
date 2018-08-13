@@ -57,3 +57,6 @@ core_freq=250
 enable_uart=1
 
 dtoverlay=vc4-kms-v3d
+
+# Enable RTC
+dtoverlay=i2c-rtc,mcp7941x
