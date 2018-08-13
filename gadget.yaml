@@ -14,7 +14,7 @@ volumes:
 connections:
  - plug: JMOa0xipSr8QRguwZNbWsIg3RQTNDC3v:hardware-observe
  - plug: JMOa0xipSr8QRguwZNbWsIg3RQTNDC3v:network-observe
- - plug: JMOa0xipSr8QRguwZNbWsIg3RQTNDC3v:serial-port
  - plug: JMOa0xipSr8QRguwZNbWsIg3RQTNDC3v:system-observe
  - plug: JMOa0xipSr8QRguwZNbWsIg3RQTNDC3v:log-observe
-
+ - plug: JMOa0xipSr8QRguwZNbWsIg3RQTNDC3v:serial-port
+   slot: Dv1P4iw0YujaAaYshHTqXdzDKe4cdsdx:serial
